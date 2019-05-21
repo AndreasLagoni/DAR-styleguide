@@ -7,41 +7,47 @@
 h1,
 a,
 h2,
-h3 {
-  font-family: "Roboto Mono", monospace;
-}
+h3,
+h4,
+button,
 p {
-  font-family: "Abel", sans-serif;
+  font-family: Verdana;
 }
-/* --- Grid css style  --- */
+h1 {
+  font-size: 50px;
+  color: #3f5b58;
+}
+/* --- Flex css style  --- */
 .flexWrapper {
   display: flex;
   flex-direction: row;
 }
 /* --- Aside nav wrapper  --- */
 .asideWrapper {
-  height: 100%;
-  min-width: 250px;
+  height: 100px;
+  width: 100vw;
   position: fixed;
   background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  z-index: 99;
+  align-items: center;
 }
 /* --- Aside NAV  --- */
 .navWrapper ul {
-  margin-left: 30px;
   list-style: none;
+  display: flex;
 }
 .navWrapper ul li {
-  margin: 10px 5px;
+  margin: 10px 25px;
 }
 .navWrapper ul li a {
   display: block;
   padding: 5px;
   text-decoration: none;
-  font-size: 20px;
-  color: #515f6d;
+  font-size: 17px;
+  color: black;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
@@ -50,7 +56,7 @@ p {
   transition: all 0.5s;
 }
 .navWrapper ul li a:hover {
-  color: #d8764e;
+  color: #597e50;
 }
 /* stroke */
 .navWrapper ul li a {
@@ -64,7 +70,7 @@ p {
   width: 0%;
   content: ".";
   color: transparent;
-  background: #d8764e;
+  background: #597e50;
   height: 2px;
 }
 .navWrapper ul li a:hover:after {
@@ -73,14 +79,19 @@ p {
 /* --- Aside LOGO  --- */
 .asideWrapper img {
   position: absolute;
-  width: 100%;
-  height: 130px;
-  top: 0;
+  width: 60px;
+  height: 90px;
+  top: 15;
+  left: 50px;
+}
+.asideWrapper p {
+  position: absolute;
+  left: 110px;
+  font-size: 20px;
 }
 /* --- main wrapper  --- */
 .mainWrapper {
   position: relative;
-  left: 250px;
   height: auto;
 }
 /* --- First section / Landing section  --- */
@@ -91,7 +102,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #6696ac;
+  background-color: #597e50;
   margin-bottom: 50px;
 }
 .landingSection h1,
@@ -111,11 +122,6 @@ h2 {
   flex-direction: column;
   background-color: white;
   margin-bottom: 50px;
-}
-.farveSection h1 {
-  margin: 14px 16px;
-  font-size: 50px;
-  color: #515f6d;
 }
 .farveSection .color {
   margin: 14px 16px;
@@ -151,24 +157,14 @@ h2 {
   background-color: white;
   margin-bottom: 50px;
 }
-.logoSection h1 {
-  font-size: 50px;
-  color: #515f6d;
-}
 .logoSection img {
   width: 400px;
 }
 .logoSection h3 {
   font-size: 20px;
-  color: #515f6d;
+  color: #3f5b58;
 }
 .logoSection hr {
-  width: 400px;
-}
-.logoHvid {
-  margin-top: 10px;
-  background-color: #515f6d;
-  padding: 14px 16px;
   width: 400px;
 }
 /* --- Knapper section  --- */
@@ -179,12 +175,6 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: white;
-}
-.knapperSection h1 {
-  margin: 14px 16px;
-  font-size: 50px;
-  width: 100%;
-  color: #515f6d;
 }
 .knapperSection article {
   width: 35%;
