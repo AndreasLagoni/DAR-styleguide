@@ -15,14 +15,17 @@ p {
 }
 h1 {
   font-size: 50px;
-  color: #3f5b58;
+  color: black;
+}
+h2 {
+  color: black;
 }
 /* --- Flex css style  --- */
 .flexWrapper {
   display: flex;
   flex-direction: row;
 }
-/* --- Aside nav wrapper  --- */
+/* --- TOP nav wrapper  --- */
 .asideWrapper {
   height: 100px;
   width: 100vw;
@@ -93,11 +96,12 @@ h1 {
 .mainWrapper {
   position: relative;
   height: auto;
+  margin-top: 100px;
 }
 /* --- First section / Landing section  --- */
 .landingSection {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,7 +110,7 @@ h1 {
   margin-bottom: 50px;
 }
 .landingSection h1,
-h2 {
+.landingSection h2 {
   font-size: 50px;
   color: rgb(238, 238, 238);
 }
@@ -162,7 +166,6 @@ h2 {
 }
 .logoSection h3 {
   font-size: 20px;
-  color: #3f5b58;
 }
 .logoSection hr {
   width: 400px;
@@ -180,12 +183,8 @@ h2 {
   width: 35%;
 }
 .knapperSection article h2 {
-  color: #3f5b58;
   margin: 10px 0;
   font-size: 50px;
-}
-.knapperSection article h3 {
-  color: #3f5b58;
 }
 .knapperSection article hr {
   width: 60%;
@@ -262,6 +261,45 @@ h2 {
 .typoSection p {
   margin: 14px 0;
   font-size: 17px;
+}
+/* ---  Iconer  --- */
+.iconerSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.iconerSection h1 {
+  margin: 14px 0;
+  font-size: 50px;
+}
+.iconerSection h3 {
+  margin: 14px 0;
+  font-size: 20px;
+  width: 60%;
+}
+.iconerSection p {
+  width: 50%;
+  margin: 14px 0;
+  font-size: 17px;
+  color: black;
+}
+.iconerSection a {
+  font-size: 16px;
+  color: black;
+}
+.iconerSection .iconTable {
+  width: 50%;
+  text-align: left;
+  font-size: 22px;
+  color: white;
+  background-color: #597e50;
+}
+.iconTable tr th {
+  border: 1px solid white;
+  padding: 1em;
+  font-weight: 300;
 }
 /* ---  Sprog  --- */
 .sprogSection {
